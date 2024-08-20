@@ -40,12 +40,9 @@ function sendJsonFile() {
     fetch('/json/json1.json')
         .then(response => response.json())
         .then(data => {            
-            missilesData = data;
-            
+            missilesData = data;       
            
-            //var jsonMessage = JSON.stringify(data);
             
-            //sendMessage(jsonMessage);
             console.log(jsonMessage)
         })
         .catch(error => console.error('Error reading JSON file:', error));
